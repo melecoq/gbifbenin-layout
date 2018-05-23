@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
 		<title>Atlas of Living Bénin | GBIF Bénin</title>
@@ -155,37 +157,186 @@
 		</div>	
 
 		
-	
+		<div class="container">
+			<div class="content format">
+				<div class="row">
+					<div class="currentdate">
+						<div class="region region-currentdate">
+							<div id="block-block-6" class="block block-block clearfix">
+								<script language="javascript">
+								today = new Date();
+								var options = {
+									weekday: "long", year: "numeric", month: "long", day: "2-digit"
+								};
+								document.write(today.toLocaleDateString("fr-fr", options));
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<div class="block-breadcrumb col-sm-6 col-md-6">
+						<ul class="breadcrumb">
+							<li>
+								<a href="http://193.54.101.44/drupal-benin/">Accueil</a>
+		<span class="divider">/</span>													</li>
+							<li>
+								<a href="http://193.54.101.44/drupal-benin/">Consulter</a>
+			<span class="divider">/</span>					
+							</li>
+							<li>
+								Portail du GBIF Bénin
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				<div class="row col-xs-12 col-sm-12">
+				
+					<h2 class="search">Les donn&eacute;es b&eacute;ninoises sur la biodiversit&eacute;</h2>
+						<p>
+							Le portail béninois du GBIF ouvre l’accès aux données primaires sur la
+		biodiversité fournies par des institutions béninoises. Ces données d’occurrences
+		d’espèces sont issues de collections ou d’observations de terrain et ont une distribution géographique mondiale.
+						</p>
+
+
+<!-- Main stats -->
+    <div class="col-md-12">
+      <div class="main-stats row">
+        <div class="main-stats col-sm-6 col-md-4">
+          <h4>405,578 Occurrences</h4>
+          <div class="stat-number" id="allRecords">
+        
+          </div>
+        </div>
+
+        <div class="main-stats col-sm-6 col-md-4">
+          <h4>3,427 Espèces</h4>
+          <div class="stat-number" id="allSpecies">
+        
+          </div>
+        </div>
+
+        <div class="main-stats col-sm-6 col-md-4">
+          <h4>6,624 Images</h4>
+          <div class="stat-number" id="allImages">
+            
+          </div>
+        </div>
 
 
 
+      </div><!-- End main stats -->
 
 
 
-<div class="row">
-                    <div class="col-md-3 vcenter">
-                        <div>   <a href="http://www.ala.org.au/" target="_blank">
-                            <img src="picture/ala-white.png" class="img-responsive center-block" alt="Atlas of Living Australia">
-                        </a> </div>
-                    </div><!--
-                    --><div class="col-md-3 vcenter">
-                        <a href="https://crowdin.com/" target="_blank">
-                            <img src="picture/crowdin-white.png" class="img-responsive center-block" alt="Crowdin">
-                        </a>
-                    </div><!--
-                    --><div class="col-md-3 vcenter">
-                        <a href="http://www.gbif.org/" target="_blank">
-                            <img src="picture/GBIF-2015-full.jpg" class="img-responsive center-block" alt="GBIF">
-</a>
-                    </div><!--
-                    --><div class="col-md-3 vcenter">
-                        <a href=" http://193.54.101.44/drupal-benin/" target="_blank">
-                            <img src="picture/header_gbif_site.png" class="img-responsive center-block" alt="GBIF Benin">
+					<div class="col-md-8 col-md-offset-2">
+						<form action="http://recherche.193.54.101.44/drupal-benin/occurrences/search?#tab_mapView" method="get" role="search">
+							<h2 id="input-group-h2"><span class="glyphicon glyphicon-question-sign brown"></span>  Consulter les <a href="http://recherche.193.54.101.44/drupal-benin/occurrences/search?#tab_mapView" method="get" id="total-record-link"><span id="totalRecord" class="pink"></a></span> occurrences</h2>
+							<script type="text/javascript">totalRecord();</script>
 
-                        </a>
-                    </div>
-                </div>
-            </div>
+							<input type="text" class="form-control input-lg" placeholder="Nom scientifique, nom vernaculaire, etc." name="taxa">
+							<div class="row">
+								<div class="col-md-3"></div>
+								<div class="col-md-3">
+									<button id="first-search" class="btn btn-default search-occurrence btn-lg" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+
+								</div>
+								<div class="col-md-3">
+									<a class="btn btn-default search-occurrence btn-lg" href="http://recherche.193.54.101.44/drupal-benin/search#advanceSearch">Recherche avancée</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+		
+
+
+				<div id="thumbnail-search" class="row">
+
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<h2 class="thumbnail-2"> Jeux de données</h2>
+							<script type="text/javascript">totalDataset();</script>
+							<!-- <a href="https://www.gbif.org/dataset/search?q=Benin">--><img src="picture/jeu-donnees2.jpg" alt="Jeux de données"><!--</a>-->
+							<div class="caption">
+								<p>Accès aux données d'occurrences et informations sur les jeux de données publiés par les institutions ou collections participant au GBIF (licence, citation, etc.)</p>
+								<!--	<p><a href="http://10.1.1.2/collectory/datasets" target="_blank" id="btn-search-dataset" class="btn btn-primary" role="button">Accéder aux jeux de données</a></p> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<h2 class="thumbnail-2">Espèces</h2>
+							<a href="https://www.gbif.org/species/search?q=Benin"><img src="picture/jeu-donnees3.jpg" alt="Espèces"></a>
+							<div class="caption">
+								<!--	<p><a href="http://10.1.1.2/collectory/datasets" target="_blank" id="btn-search-explorer" class="btn btn-primary" role="button">Explorer les occurences</a></p> -->
+							</div>	
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<h2 class="thumbnail-2">Images</h2>
+							<a href=" https://www.gbif.org/occurrence/gallery?country=BJ"><img src="picture/jeu-donnees4.jpg" alt="Images"></a>
+							<div class="caption">
+								<p>Accès à 6.624 images d’espèces animales et végétales faisant partie de la biodiversité du Bénin et publiées par le GBIF BENIN</p>		
+								<!--	<p><a href="http://10.1.1.2/collectory/datasets" target="_blank" id="btn-search-explorer" class="btn btn-primary" role="button">Accéder aux images</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="access" class="row">
+					<div class="col-sm-6 col-md-4">
+					<p><a href="https://www.gbif.org/dataset/search?q=Benin" id="btn-search-dataset" class="btn btn-primary bouton" role="button">Accéder aux jeux de données</a></p>
+						
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						
+						<p><a href="https://www.gbif.org/occurrence/search?country=BJ" id="btn-search-explorer" class="btn btn-primary bouton" role="button">Explorer les occurrences</a></p>
+
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<p><a href="https://www.gbif.org/occurrence/gallery?country=BJ" id="btn-search-meta" class="btn btn-primary bouton" role="button">Accéder aux images</a></p>
+
+					</div>
+
+					
+
+				</div>
+
+
+
+				<div class="row">
+					<div class="col-md-3 vcenter">
+						<div>	<a href="http://www.ala.org.au/" target="_blank">
+							<img src="picture/ala-white.png" class="img-responsive center-block" alt="Atlas of Living Australia">
+						</a> </div>
+					</div><!--
+					--><div class="col-md-3 vcenter">
+						<a href="https://crowdin.com/" target="_blank">
+							<img src="picture/crowdin-white.png" class="img-responsive center-block" alt="Crowdin">
+						</a>
+					</div><!--
+					--><div class="col-md-3 vcenter">
+						<a href="http://www.gbif.org/" target="_blank">
+							<img src="picture/GBIF-2015-full.jpg" class="img-responsive center-block" alt="GBIF">
+				</a>
+					</div><!--
+					--><div class="col-md-3 vcenter">
+						<a href=" http://193.54.101.44/drupal-benin/" target="_blank">
+							<img src="picture/GBIF_BENIN_Logo3.png" class="img-responsive center-block" alt="GBIF Benin">
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 		<div id="footer">
 			<div class="region-footer">
