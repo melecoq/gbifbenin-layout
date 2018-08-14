@@ -10,6 +10,10 @@
     margin-right: 15px;
 }
 
+.row-partenaire{
+    background-color:white;
+}
+
 .contenu_page {
     background-color: #FFFFFF;
 }
@@ -146,7 +150,7 @@ ul.nav ul > li {
 }
 
 .navbar-header {
-    padding: 0% 2% 0% 2%;
+    padding: 0% 0% 0% 0%;
 }
 
 .navbar-header .nav li {
@@ -624,6 +628,10 @@ ul.contextual-links li a {
     color: white;
 }
 
+.row {
+//    background-color: white;
+}
+
 .region-footer .contenu_page {
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
@@ -712,7 +720,7 @@ ul.contextual-links li a {
 	}
 	
 	.navbar-header {
-		float: none;
+		float: none; !important
 	}
 	
 	.navbar-header .nav {
@@ -763,7 +771,7 @@ ul.contextual-links li a {
 	}
 	
 	.navbar-header {
-		float: none;
+		float: none !important;
 	}
 	
 	.col-sm-12 {
